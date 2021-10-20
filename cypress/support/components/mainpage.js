@@ -33,6 +33,14 @@ export class MainPage {
   getCompletedPost() {
     return cy.get(selectors.completedPost);
   }
+
+  getClearCompletedBtn() {
+    return cy.get(selectors.clearComletedBtn);
+  }
+
+  getCompletedEditInput() {
+    return cy.get(selectors.editCompletedInput);
+  }
 }
 
 export const mainPage = new MainPage();
